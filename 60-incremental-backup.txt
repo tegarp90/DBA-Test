@@ -1,0 +1,8 @@
+1. mysqlbackup with binary log
+	+ open source tools
+	- harus di execute di terminal, tidak tersedia GUI
+2. sqlbak
+	+ backup database menggunakan web GUI dan lebih mudah untuk di monitor
+	+ menyimpan file backup ke could storage (gdrive, onedrive, dropbox, dll)
+	- paid tools
+	- file backup terupload ke internet, ada resiko terkait security data

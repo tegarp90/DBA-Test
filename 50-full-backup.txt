@@ -1,0 +1,17 @@
+List of full backups ways MariaDB
+
+1. mysqldump
+	+ cara yang paling fleksibel untuk melakukan backup, dan pilihan yang bagus ketika data size masih relatif kecil.
+	+ dumps data dapat dijadikan format sql, csv, dan xml sehingga dapat di import dengan mudah ke database lain
+	- ketika data size besar, proses backup maupun restore akan memakan waktu yang lebih panjang
+2. Percona XtraBackup
+	+ proses backup yang cepat atau hot backups.
+	- pada versi mariadb 10.1 keatas, metode backup ini tidak lagi disupport.
+3. Mariabackup
+	+ forked from Percona XtraBackup, metode ini juga melakukan hot backup.
+	- "MariaBackup is buggy and might not work on larger databases. Taking backups or restoring them takes manual work"
+	  source : https://www.trustradius.com/reviews/mariadb-2020-09-18-07-27-03
+4. mysqlhotcopy
+	+ ketika storage engine tables menggunakan MyISAM, metode ini paling baik digunakan karena proses backup dan restore akan lebih cepat
+	- hanya baik digunakan pada storage engine MyISAM
+	- info dari website dokumentasi mariadb, metode ini sudah deprecated.
