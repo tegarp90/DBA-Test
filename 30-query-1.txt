@@ -1,3 +1,2 @@
 Sudah cukup optimal.
-Karena hanya cukup inner join 2 table yaitu table customer untuk mendapatkan kode state dan table payments untuk mendapatkan harga pembelian.
-Join dilakukan dengan key customerNumber dimana terdapat di kedua table tersebut
+Tapi jika bisa ditambahkan field total pembelian pada table orders, tidak perlu ada operasi perkalian dalam query sehingga query lebih optimized

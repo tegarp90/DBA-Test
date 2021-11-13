@@ -1,0 +1,3 @@
+Sudah cukup optimal.
+Tapi jika bisa ditambahkan field total pembelian pada table orders, tidak perlu ada operasi perkalian dalam query sehingga query lebih optimized.
+Dan juga data belum clean pada table customers banyak data state yang masih null.
